@@ -38,16 +38,13 @@ class n:
 n1= n(float(input("Introduce un numero entero positivo: ")))
 n1.myfunc()
 
-class n:
-    def __init__(self, numero):
-            self.numero = numero
+
+class IMC:
+    def __init__(self, kg, m):
+            self.kg = kg
+            self.m = m
     def myfunc(self):
-        print(self.numero*((self.numero+1)/2))
+        print(self.kg/(self.m**2))
         
-n1= n(float(input("Introduce un numero entero positivo: ")))
-n1.myfunc()
-
-
-
-
-
+IMC1= IMC(float(input("Introduce tu peso (kilogramos): ")), float(input("Introduce tu estatura (metros): ")))
+print(IMC1.myfunc())
